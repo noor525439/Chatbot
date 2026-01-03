@@ -1,5 +1,8 @@
 import express from "express"
+import { Message } from "../Controllers/chatbot.message.js";
 
-const Router = express.Router();
+const router = express.Router();
 
-export default Router;
+router.post("/message",Message);
+
+export default router;
